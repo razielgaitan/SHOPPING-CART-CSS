@@ -6,8 +6,8 @@ Made with <3
 
 ## Wide Screen
 
-[wideScreen](wideScreen.PNG)
+![wideScreen](wideScreen.PNG)
 
 ## Mobile Screen
 
-[mobileScreen](mobileScreen.PNG)
+![mobileScreen](mobileScreen.PNG)
