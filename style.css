@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* MOBILE FIRST */
+
+html{
+    font-size: 70%;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    width: 100%;
+    background-color: rgb(255, 123, 0);
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1.6em;
+    box-sizing: border-box;
+    gap: .5em;
+}
+
+.titulo i{
+    font-size: 1.5em;
+    color: rgb(255, 215, 163);
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado{
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    background: rgb(255, 123, 0);
+    border: 1px solid rgb(248, 169, 95);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.encabezado-producto{
+    display: flex;
+    flex-basis: 75%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.encabezado-precio{
+    display: flex;
+    flex-basis: 25%;
+    height: 100%;
+    align-items: center;
+    border-left: 1px solid rgb(248, 169, 95);
+    justify-content: center;
+   
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: .4fr 1fr 1fr .8fr;
+    grid-auto-rows: 8rem;
+
+    animation-name: deslizar;
+    animation-duration: 2.5s;
+}
+
+
+.item-icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.item-icono i{
+    display: flex;
+    height: 70%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.item-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.item-texto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+
+.item-precio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+
+img{
+    width: 6rem;
+}
+
+@keyframes deslizar{
+    0%{
+        transform: translateY(-100%);
+        position: relative;
+        z-index: -1;
+        
+    }
+
+    to{
+        position: relative;
+        z-index: -1;
+        transform: translateY(0%);
+    }
+
+}
+
+/* TABLETS RESOLTIONS  */
+
+@media only screen and (min-width: 620px) {
+
+    html{
+        font-size: 100%;
+    }
+
+    .item-icono i{
+        font-size: 1.4rem;
+    }
+
+}
+
